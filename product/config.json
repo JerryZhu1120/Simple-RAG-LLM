@@ -1,0 +1,53 @@
+{
+    "vecdb": {
+        "host": "127.0.0.1",
+        "port": 19530,
+        "connection_retries": 3,
+        "collection_name": "all_data",
+        "dimension": 1536,
+        "metric_type": "L2",
+        "index_type": "HNSW",
+        "index_params": {
+            "M": 64,
+            "efConstruction": 256
+        },
+        "search_params": {
+            "ef": 512
+        },
+        "topk": 8
+    },
+    "textdb": {
+        "mongodb_url": "mongodb://localhost:27017/"
+    },
+    "preprocessor": {
+        "embedding_model": "text-embedding-ada-002",
+        "embedding_num_workers": 8,
+        "embedding_max_retries": 3
+    },
+    "data": {
+        "mongodb_url": "mongodb://47.106.236.106:28039/",
+        "datatypes": [
+            "research",
+            "news",
+            "transcripts",
+            "Press Releases",
+            "tables"
+        ]
+    },
+    "respondent": {
+        "embedding_max_retries": 3,
+        "model_names": [
+            "gpt-3.5-turbo",
+            "gpt-4-1106-preview"
+        ],
+        "max_chat_histories": 100,
+        "summary_temperature": 0.1,
+        "rewrite_model": "gpt-4-1106-preview",
+        "rewrite_max_retries": 2,
+        "rewrite_temperature": 0.1,
+        "max_doc_number": 20
+    },
+    "api": {
+        "allowed_copyrights": ["public", "bernste", "neoubs", "aletheia", "marquee", "jefferies", "jpmorgan", "yipit", "cicc"]
+    }
+}

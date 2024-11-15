@@ -1,0 +1,7 @@
+*.docx
+*.key
+
+queries/
+.vscode/
+分析/
+__pycache__

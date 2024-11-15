@@ -1,0 +1,8 @@
+# pip install -r requirements.txt
+langchain
+flask
+openai
+faiss-cpu
+flask-cors
+pypdf
+tqdm

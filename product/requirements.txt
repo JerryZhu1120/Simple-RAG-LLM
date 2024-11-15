@@ -1,0 +1,14 @@
+# pip install -r requirements.txt
+langchain
+flask
+openai==0.28.1
+faiss-cpu
+flask-cors
+pypdf
+tqdm
+chardet
+cchardet
+tiktoken
+unstructured
+# pip install grpcio==1.58.0
+# python -m pip install milvus[client]
